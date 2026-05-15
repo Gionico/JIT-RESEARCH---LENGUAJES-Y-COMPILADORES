@@ -1,0 +1,5 @@
+Link para visualizar el vídeo de la presentación sobre el tema: Herramientas para el proceso del
+cracking y la importancia de los decompiladores en la ingeniería inversa del software:
+
+
+https://youtu.be/ySgxqsabaJE
