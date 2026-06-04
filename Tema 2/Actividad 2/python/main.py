@@ -20,7 +20,7 @@ def simular_collatz(n):
         recursiva_collatz(i)
         print()
 
-def benchmark_collatz(n, repeticiones=5):
+def benchmark_collatz(n, repeticiones=10):
     tiempos = []
     picos_memoria = []
 
@@ -34,7 +34,7 @@ def benchmark_collatz(n, repeticiones=5):
         _, pico_ram = tracemalloc.get_traced_memory()
         tracemalloc.stop()
 
-        tiempos.append(fin_tiempo - inicio_tiempo)
+        tiempos.append((fin_tiempo - inicio_tiempo)*1000)
         picos_memoria.append(pico_ram / (1024*1024))
 
     tiempo_promedio = sum(tiempos) / repeticiones
@@ -43,8 +43,8 @@ def benchmark_collatz(n, repeticiones=5):
     # Salida en formato plano texturizado
     print(f"Lenguaje: Python")
     print(f"Tamaño (n): {n}")
-    print(f"Tiempo Promedio: {tiempo_promedio:.6f} segundos")
+    print(f"Tiempo Promedio: {tiempo_promedio:.6f} milisegundos")
     print(f"RAM Promedio (Pico): {ram_promedio:.6f} MB\n")
 
 if __name__ == "__main__":
-    benchmark_collatz(n=5000)
+    benchmark_collatz(n=50000)

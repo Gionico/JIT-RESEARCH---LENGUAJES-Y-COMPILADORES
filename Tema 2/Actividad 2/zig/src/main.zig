@@ -29,8 +29,8 @@ fn simularCollatz(n: u64, writer: anytype) void {
 }
 
 pub fn main() !void {
-    const n: u64 = 5000;
-    const repeticiones: usize = 5;
+    const n: u64 = 100000;
+    const repeticiones: usize = 10;
 
     var tiempos: [repeticiones]f64 = undefined;
     var picos_memoria: [repeticiones]f64 = undefined;
@@ -56,8 +56,8 @@ pub fn main() !void {
 
         const fin_tiempo = time.nanoTimestamp();
 
-        const duracion_secs = @as(f64, @floatFromInt(fin_tiempo - inicio_tiempo)) / 1_000_000_000.0;
-        tiempos[r] = duracion_secs;
+        const duracion_milisecs = @as(f64, @floatFromInt(fin_tiempo - inicio_tiempo)) / 1_000_000.0;
+        tiempos[r] = duracion_milisecs;
 
         const memoria_bytes = gpa.total_requested_bytes;
         picos_memoria[r] = @as(f64, @floatFromInt(memoria_bytes)) / (1024.0 * 1024.0);
@@ -80,6 +80,6 @@ pub fn main() !void {
 
     std.debug.print("\nLenguaje: Zig (0.13.0)\n", .{});
     std.debug.print("Tamaño (n): {d}\n", .{n});
-    std.debug.print("Tiempo Promedio: {d:.6} segundos\n", .{tiempo_promedio});
+    std.debug.print("Tiempo Promedio: {d:.6} milisegundos\n", .{tiempo_promedio});
     std.debug.print("RAM Promedio (Pico): {d:.6} MB\n", .{ram_promedio});
 }

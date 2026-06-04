@@ -31,7 +31,7 @@ function simularCollatz(n) {
     process.stdout.write(totalBuffer.join('\n') + '\n');
 }
 
-function benchmarkCollatz(n, repeticiones = 5) {
+function benchmarkCollatz(n, repeticiones = 10) {
     const tiempos = [];
     const picosMemoria = [];
 
@@ -46,8 +46,8 @@ function benchmarkCollatz(n, repeticiones = 5) {
         
         const memoriaBytes = process.memoryUsage().heapUsed;
 
-        tiempos.push((finTiempo - inicioTiempo) / 1000);
-        
+        tiempos.push((finTiempo - inicioTiempo));
+
         picosMemoria.push(memoriaBytes / (1024 * 1024));
     }
 
@@ -56,9 +56,8 @@ function benchmarkCollatz(n, repeticiones = 5) {
 
     console.log(`\nLenguaje: JavaScript (Node.js)`);
     console.log(`Tamaño (n): ${n}`);
-    console.log(`Tiempo Promedio: ${tiempoPromedio.toFixed(6)} segundos`);
+    console.log(`Tiempo Promedio: ${tiempoPromedio.toFixed(6)} milisegundos`);
     console.log(`RAM Promedio (Pico): ${ramPromedio.toFixed(6)} MB\n`);
 }
 
-// --- EJECUCIÓN ---
-benchmarkCollatz(5000, 5);
+benchmarkCollatz(100000);

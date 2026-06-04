@@ -51,7 +51,7 @@ fn benchmark_collatz(n: u64, repeticiones: usize) {
         let duracion = inicio_tiempo.elapsed();
         let stats = region.change(); 
         
-        tiempos.push(duracion.as_secs_f64());
+        tiempos.push(duracion.as_millis() as f64); 
         picos_memoria.push((stats.bytes_allocated as f64) / (1024.0 * 1024.0));
     }
 
@@ -60,10 +60,10 @@ fn benchmark_collatz(n: u64, repeticiones: usize) {
 
     println!("\nLenguaje: Rust");
     println!("Tamaño (n): {}", n);
-    println!("Tiempo Promedio: {:.6} segundos", tiempo_promedio);
+    println!("Tiempo Promedio: {:.6} milisegundos", tiempo_promedio);
     println!("RAM Promedio (Pico): {:.6} MB", ram_promedio);
 }
 
 fn main() {
-    benchmark_collatz(5000, 5);
+    benchmark_collatz(100000, 10);
 }
