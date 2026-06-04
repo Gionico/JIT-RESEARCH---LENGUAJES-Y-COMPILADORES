@@ -37,7 +37,6 @@ pub fn main() !void {
 
     var r: usize = 0;
     while (r < repeticiones) : (r += 1) {
-        // Inicializamos el asignador con el rastreo de límites activo
         var gpa = std.heap.GeneralPurposeAllocator(.{
             .enable_memory_limit = true,
         }){};
@@ -60,11 +59,9 @@ pub fn main() !void {
         const duracion_secs = @as(f64, @floatFromInt(fin_tiempo - inicio_tiempo)) / 1_000_000_000.0;
         tiempos[r] = duracion_secs;
 
-        // Capturamos el pico de bytes pedidos al Heap antes de liberar
         const memoria_bytes = gpa.total_requested_bytes;
         picos_memoria[r] = @as(f64, @floatFromInt(memoria_bytes)) / (1024.0 * 1024.0);
 
-        // Limpiamos la memoria
         dummy_list.deinit();
         _ = gpa.deinit();
     }

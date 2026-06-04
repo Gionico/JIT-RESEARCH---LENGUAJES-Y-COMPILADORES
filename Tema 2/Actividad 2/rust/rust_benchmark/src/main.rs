@@ -43,18 +43,15 @@ fn benchmark_collatz(n: u64, repeticiones: usize) {
     let mut picos_memoria = Vec::new();
 
     for _ in 0..repeticiones {
-        // Inicializar el contador de memoria para esta iteración (como tracemalloc.start())
         let region = Region::new(&GLOBAL);
         let inicio_tiempo = Instant::now();
 
         simular_collatz(n);
 
         let duracion = inicio_tiempo.elapsed();
-        // Obtener estadísticas de memoria asignada
         let stats = region.change(); 
         
         tiempos.push(duracion.as_secs_f64());
-        // stats.bytes_allocated nos da el total de bytes pedidos a la RAM en este bloque
         picos_memoria.push((stats.bytes_allocated as f64) / (1024.0 * 1024.0));
     }
 
