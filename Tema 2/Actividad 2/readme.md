@@ -24,8 +24,6 @@ Cada implementación ejecuta una simulación de la secuencia de Collatz para val
 - Memoria RAM instalada: 8GB DDR4 
 - Almacenamiento: 512GB 
 
-> Complete esta sección con los detalles del equipo utilizado para las pruebas.
-
 ## 3. Estructura de carpetas
 
 - `JavaScript/main.js` → implementación con Node.js
