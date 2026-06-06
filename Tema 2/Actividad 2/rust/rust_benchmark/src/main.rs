@@ -65,5 +65,5 @@ fn benchmark_collatz(n: u64, repeticiones: usize) {
 }
 
 fn main() {
-    benchmark_collatz(100000, 10);
+    benchmark_collatz(5000, 10);
 }

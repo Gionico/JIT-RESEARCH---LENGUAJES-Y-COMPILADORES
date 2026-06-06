@@ -29,7 +29,7 @@ fn simularCollatz(n: u64, writer: anytype) void {
 }
 
 pub fn main() !void {
-    const n: u64 = 100000;
+    const n: u64 = 5000;
     const repeticiones: usize = 10;
 
     var tiempos: [repeticiones]f64 = undefined;

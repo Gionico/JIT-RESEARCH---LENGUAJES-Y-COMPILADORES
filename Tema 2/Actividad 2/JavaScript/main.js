@@ -60,4 +60,4 @@ function benchmarkCollatz(n, repeticiones = 10) {
     console.log(`RAM Promedio (Pico): ${ramPromedio.toFixed(6)} MB\n`);
 }
 
-benchmarkCollatz(100000);
+benchmarkCollatz(5000);

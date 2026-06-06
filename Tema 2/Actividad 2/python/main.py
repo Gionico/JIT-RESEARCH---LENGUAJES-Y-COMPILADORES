@@ -47,4 +47,4 @@ def benchmark_collatz(n, repeticiones=10):
     print(f"RAM Promedio (Pico): {ram_promedio:.6f} MB\n")
 
 if __name__ == "__main__":
-    benchmark_collatz(n=50000)
+    benchmark_collatz(n=5000)
