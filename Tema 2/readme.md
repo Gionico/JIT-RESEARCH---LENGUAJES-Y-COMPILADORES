@@ -22,7 +22,7 @@ El proyecto se compone de tres núcleos fundamentales:
 
 *   **`/Informe 2 Compiladores`**: Contiene el documento completo de la investigación en formato PDF, con el desglose teórico, la matriz de paradigmas, la tabla analítica de benchmarking y las reglas de producción sintáctica del DSL.
 *   **`/Actividad 2`**: La carpeta que contiene los códigos fuente de los experimentos realizados en los lenguajes seleccionados, junto con los scripts de automatización para la ejecución de las pruebas de rendimiento.
-*   **`/Material de apoyo`**: El material de apoyo en formato PDF utilizado durante el video de defensa.
+*   **`/Presentacion Compiladores 2`**: El material de apoyo en formato PDF utilizado durante el video de defensa.
 
 ---
 
