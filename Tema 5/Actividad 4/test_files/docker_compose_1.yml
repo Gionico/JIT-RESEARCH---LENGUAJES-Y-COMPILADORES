@@ -1,0 +1,115 @@
+version: '3.8'
+
+networks:
+  net_custom_0:
+    driver: bridge
+    attachable: true
+  net_custom_1:
+    driver: bridge
+    attachable: true
+  net_custom_2:
+    driver: bridge
+    attachable: true
+  net_custom_3:
+    driver: bridge
+    attachable: true
+  net_custom_4:
+    driver: bridge
+    attachable: true
+  net_custom_5:
+    driver: bridge
+    attachable: true
+  net_custom_6:
+    driver: bridge
+    attachable: true
+  net_custom_7:
+    driver: bridge
+    attachable: true
+  net_custom_8:
+    driver: bridge
+    attachable: true
+  net_custom_9:
+    driver: bridge
+    attachable: true
+
+services:
+  web_service_0:
+    image: nginx:latest
+    networks:
+      net_custom_0
+  web_service_1:
+    image: nginx:latest
+    networks:
+      net_custom_1
+  web_service_2:
+    image: nginx:latest
+    networks:
+      net_custom_2
+  web_service_3:
+    image: nginx:latest
+    networks:
+      net_custom_3
+  web_service_4:
+    image: nginx:latest
+    networks:
+      net_custom_4
+  web_service_5:
+    image: nginx:latest
+    networks:
+      net_custom_5
+  web_service_6:
+    image: nginx:latest
+    networks:
+      net_custom_6
+  web_service_7:
+    image: nginx:latest
+    networks:
+      net_custom_7
+  web_service_8:
+    image: nginx:latest
+    networks:
+      net_custom_8
+  web_service_9:
+    image: nginx:latest
+    networks:
+      net_custom_9
+  web_service_10:
+    image: nginx:latest
+    networks:
+      net_custom_0
+  web_service_11:
+    image: nginx:latest
+    networks:
+      net_custom_1
+  web_service_12:
+    image: nginx:latest
+    networks:
+      net_custom_2
+  web_service_13:
+    image: nginx:latest
+    networks:
+      net_custom_3
+  web_service_14:
+    image: nginx:latest
+    networks:
+      net_custom_4
+  web_service_15:
+    image: nginx:latest
+    networks:
+      net_custom_5
+  web_service_16:
+    image: nginx:latest
+    networks:
+      net_custom_6
+  web_service_17:
+    image: nginx:latest
+    networks:
+      net_custom_7
+  web_service_18:
+    image: nginx:latest
+    networks:
+      net_custom_8
+  web_service_19:
+    image: nginx:latest
+    networks:
+      net_custom_9

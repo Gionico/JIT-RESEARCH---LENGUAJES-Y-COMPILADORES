@@ -1,0 +1,665 @@
+version: '3.8'
+
+networks:
+  net_custom_0:
+    driver: bridge
+    attachable: true
+  net_custom_1:
+    driver: bridge
+    attachable: true
+  net_custom_2:
+    driver: bridge
+    attachable: true
+  net_custom_3:
+    driver: bridge
+    attachable: true
+  net_custom_4:
+    driver: bridge
+    attachable: true
+  net_custom_5:
+    driver: bridge
+    attachable: true
+  net_custom_6:
+    driver: bridge
+    attachable: true
+  net_custom_7:
+    driver: bridge
+    attachable: true
+  net_custom_8:
+    driver: bridge
+    attachable: true
+  net_custom_9:
+    driver: bridge
+    attachable: true
+  net_custom_10:
+    driver: bridge
+    attachable: true
+  net_custom_11:
+    driver: bridge
+    attachable: true
+  net_custom_12:
+    driver: bridge
+    attachable: true
+  net_custom_13:
+    driver: bridge
+    attachable: true
+  net_custom_14:
+    driver: bridge
+    attachable: true
+  net_custom_15:
+    driver: bridge
+    attachable: true
+  net_custom_16:
+    driver: bridge
+    attachable: true
+  net_custom_17:
+    driver: bridge
+    attachable: true
+  net_custom_18:
+    driver: bridge
+    attachable: true
+  net_custom_19:
+    driver: bridge
+    attachable: true
+  net_custom_20:
+    driver: bridge
+    attachable: true
+  net_custom_21:
+    driver: bridge
+    attachable: true
+  net_custom_22:
+    driver: bridge
+    attachable: true
+  net_custom_23:
+    driver: bridge
+    attachable: true
+  net_custom_24:
+    driver: bridge
+    attachable: true
+  net_custom_25:
+    driver: bridge
+    attachable: true
+  net_custom_26:
+    driver: bridge
+    attachable: true
+  net_custom_27:
+    driver: bridge
+    attachable: true
+  net_custom_28:
+    driver: bridge
+    attachable: true
+  net_custom_29:
+    driver: bridge
+    attachable: true
+  net_custom_30:
+    driver: bridge
+    attachable: true
+  net_custom_31:
+    driver: bridge
+    attachable: true
+  net_custom_32:
+    driver: bridge
+    attachable: true
+  net_custom_33:
+    driver: bridge
+    attachable: true
+  net_custom_34:
+    driver: bridge
+    attachable: true
+  net_custom_35:
+    driver: bridge
+    attachable: true
+  net_custom_36:
+    driver: bridge
+    attachable: true
+  net_custom_37:
+    driver: bridge
+    attachable: true
+  net_custom_38:
+    driver: bridge
+    attachable: true
+  net_custom_39:
+    driver: bridge
+    attachable: true
+  net_custom_40:
+    driver: bridge
+    attachable: true
+  net_custom_41:
+    driver: bridge
+    attachable: true
+  net_custom_42:
+    driver: bridge
+    attachable: true
+  net_custom_43:
+    driver: bridge
+    attachable: true
+  net_custom_44:
+    driver: bridge
+    attachable: true
+  net_custom_45:
+    driver: bridge
+    attachable: true
+  net_custom_46:
+    driver: bridge
+    attachable: true
+  net_custom_47:
+    driver: bridge
+    attachable: true
+  net_custom_48:
+    driver: bridge
+    attachable: true
+  net_custom_49:
+    driver: bridge
+    attachable: true
+  net_custom_50:
+    driver: bridge
+    attachable: true
+  net_custom_51:
+    driver: bridge
+    attachable: true
+  net_custom_52:
+    driver: bridge
+    attachable: true
+  net_custom_53:
+    driver: bridge
+    attachable: true
+  net_custom_54:
+    driver: bridge
+    attachable: true
+  net_custom_55:
+    driver: bridge
+    attachable: true
+  net_custom_56:
+    driver: bridge
+    attachable: true
+  net_custom_57:
+    driver: bridge
+    attachable: true
+  net_custom_58:
+    driver: bridge
+    attachable: true
+  net_custom_59:
+    driver: bridge
+    attachable: true
+
+services:
+  web_service_0:
+    image: nginx:latest
+    networks:
+      net_custom_0
+  web_service_1:
+    image: nginx:latest
+    networks:
+      net_custom_1
+  web_service_2:
+    image: nginx:latest
+    networks:
+      net_custom_2
+  web_service_3:
+    image: nginx:latest
+    networks:
+      net_custom_3
+  web_service_4:
+    image: nginx:latest
+    networks:
+      net_custom_4
+  web_service_5:
+    image: nginx:latest
+    networks:
+      net_custom_5
+  web_service_6:
+    image: nginx:latest
+    networks:
+      net_custom_6
+  web_service_7:
+    image: nginx:latest
+    networks:
+      net_custom_7
+  web_service_8:
+    image: nginx:latest
+    networks:
+      net_custom_8
+  web_service_9:
+    image: nginx:latest
+    networks:
+      net_custom_9
+  web_service_10:
+    image: nginx:latest
+    networks:
+      net_custom_10
+  web_service_11:
+    image: nginx:latest
+    networks:
+      net_custom_11
+  web_service_12:
+    image: nginx:latest
+    networks:
+      net_custom_12
+  web_service_13:
+    image: nginx:latest
+    networks:
+      net_custom_13
+  web_service_14:
+    image: nginx:latest
+    networks:
+      net_custom_14
+  web_service_15:
+    image: nginx:latest
+    networks:
+      net_custom_15
+  web_service_16:
+    image: nginx:latest
+    networks:
+      net_custom_16
+  web_service_17:
+    image: nginx:latest
+    networks:
+      net_custom_17
+  web_service_18:
+    image: nginx:latest
+    networks:
+      net_custom_18
+  web_service_19:
+    image: nginx:latest
+    networks:
+      net_custom_19
+  web_service_20:
+    image: nginx:latest
+    networks:
+      net_custom_20
+  web_service_21:
+    image: nginx:latest
+    networks:
+      net_custom_21
+  web_service_22:
+    image: nginx:latest
+    networks:
+      net_custom_22
+  web_service_23:
+    image: nginx:latest
+    networks:
+      net_custom_23
+  web_service_24:
+    image: nginx:latest
+    networks:
+      net_custom_24
+  web_service_25:
+    image: nginx:latest
+    networks:
+      net_custom_25
+  web_service_26:
+    image: nginx:latest
+    networks:
+      net_custom_26
+  web_service_27:
+    image: nginx:latest
+    networks:
+      net_custom_27
+  web_service_28:
+    image: nginx:latest
+    networks:
+      net_custom_28
+  web_service_29:
+    image: nginx:latest
+    networks:
+      net_custom_29
+  web_service_30:
+    image: nginx:latest
+    networks:
+      net_custom_30
+  web_service_31:
+    image: nginx:latest
+    networks:
+      net_custom_31
+  web_service_32:
+    image: nginx:latest
+    networks:
+      net_custom_32
+  web_service_33:
+    image: nginx:latest
+    networks:
+      net_custom_33
+  web_service_34:
+    image: nginx:latest
+    networks:
+      net_custom_34
+  web_service_35:
+    image: nginx:latest
+    networks:
+      net_custom_35
+  web_service_36:
+    image: nginx:latest
+    networks:
+      net_custom_36
+  web_service_37:
+    image: nginx:latest
+    networks:
+      net_custom_37
+  web_service_38:
+    image: nginx:latest
+    networks:
+      net_custom_38
+  web_service_39:
+    image: nginx:latest
+    networks:
+      net_custom_39
+  web_service_40:
+    image: nginx:latest
+    networks:
+      net_custom_40
+  web_service_41:
+    image: nginx:latest
+    networks:
+      net_custom_41
+  web_service_42:
+    image: nginx:latest
+    networks:
+      net_custom_42
+  web_service_43:
+    image: nginx:latest
+    networks:
+      net_custom_43
+  web_service_44:
+    image: nginx:latest
+    networks:
+      net_custom_44
+  web_service_45:
+    image: nginx:latest
+    networks:
+      net_custom_45
+  web_service_46:
+    image: nginx:latest
+    networks:
+      net_custom_46
+  web_service_47:
+    image: nginx:latest
+    networks:
+      net_custom_47
+  web_service_48:
+    image: nginx:latest
+    networks:
+      net_custom_48
+  web_service_49:
+    image: nginx:latest
+    networks:
+      net_custom_49
+  web_service_50:
+    image: nginx:latest
+    networks:
+      net_custom_50
+  web_service_51:
+    image: nginx:latest
+    networks:
+      net_custom_51
+  web_service_52:
+    image: nginx:latest
+    networks:
+      net_custom_52
+  web_service_53:
+    image: nginx:latest
+    networks:
+      net_custom_53
+  web_service_54:
+    image: nginx:latest
+    networks:
+      net_custom_54
+  web_service_55:
+    image: nginx:latest
+    networks:
+      net_custom_55
+  web_service_56:
+    image: nginx:latest
+    networks:
+      net_custom_56
+  web_service_57:
+    image: nginx:latest
+    networks:
+      net_custom_57
+  web_service_58:
+    image: nginx:latest
+    networks:
+      net_custom_58
+  web_service_59:
+    image: nginx:latest
+    networks:
+      net_custom_59
+  web_service_60:
+    image: nginx:latest
+    networks:
+      net_custom_0
+  web_service_61:
+    image: nginx:latest
+    networks:
+      net_custom_1
+  web_service_62:
+    image: nginx:latest
+    networks:
+      net_custom_2
+  web_service_63:
+    image: nginx:latest
+    networks:
+      net_custom_3
+  web_service_64:
+    image: nginx:latest
+    networks:
+      net_custom_4
+  web_service_65:
+    image: nginx:latest
+    networks:
+      net_custom_5
+  web_service_66:
+    image: nginx:latest
+    networks:
+      net_custom_6
+  web_service_67:
+    image: nginx:latest
+    networks:
+      net_custom_7
+  web_service_68:
+    image: nginx:latest
+    networks:
+      net_custom_8
+  web_service_69:
+    image: nginx:latest
+    networks:
+      net_custom_9
+  web_service_70:
+    image: nginx:latest
+    networks:
+      net_custom_10
+  web_service_71:
+    image: nginx:latest
+    networks:
+      net_custom_11
+  web_service_72:
+    image: nginx:latest
+    networks:
+      net_custom_12
+  web_service_73:
+    image: nginx:latest
+    networks:
+      net_custom_13
+  web_service_74:
+    image: nginx:latest
+    networks:
+      net_custom_14
+  web_service_75:
+    image: nginx:latest
+    networks:
+      net_custom_15
+  web_service_76:
+    image: nginx:latest
+    networks:
+      net_custom_16
+  web_service_77:
+    image: nginx:latest
+    networks:
+      net_custom_17
+  web_service_78:
+    image: nginx:latest
+    networks:
+      net_custom_18
+  web_service_79:
+    image: nginx:latest
+    networks:
+      net_custom_19
+  web_service_80:
+    image: nginx:latest
+    networks:
+      net_custom_20
+  web_service_81:
+    image: nginx:latest
+    networks:
+      net_custom_21
+  web_service_82:
+    image: nginx:latest
+    networks:
+      net_custom_22
+  web_service_83:
+    image: nginx:latest
+    networks:
+      net_custom_23
+  web_service_84:
+    image: nginx:latest
+    networks:
+      net_custom_24
+  web_service_85:
+    image: nginx:latest
+    networks:
+      net_custom_25
+  web_service_86:
+    image: nginx:latest
+    networks:
+      net_custom_26
+  web_service_87:
+    image: nginx:latest
+    networks:
+      net_custom_27
+  web_service_88:
+    image: nginx:latest
+    networks:
+      net_custom_28
+  web_service_89:
+    image: nginx:latest
+    networks:
+      net_custom_29
+  web_service_90:
+    image: nginx:latest
+    networks:
+      net_custom_30
+  web_service_91:
+    image: nginx:latest
+    networks:
+      net_custom_31
+  web_service_92:
+    image: nginx:latest
+    networks:
+      net_custom_32
+  web_service_93:
+    image: nginx:latest
+    networks:
+      net_custom_33
+  web_service_94:
+    image: nginx:latest
+    networks:
+      net_custom_34
+  web_service_95:
+    image: nginx:latest
+    networks:
+      net_custom_35
+  web_service_96:
+    image: nginx:latest
+    networks:
+      net_custom_36
+  web_service_97:
+    image: nginx:latest
+    networks:
+      net_custom_37
+  web_service_98:
+    image: nginx:latest
+    networks:
+      net_custom_38
+  web_service_99:
+    image: nginx:latest
+    networks:
+      net_custom_39
+  web_service_100:
+    image: nginx:latest
+    networks:
+      net_custom_40
+  web_service_101:
+    image: nginx:latest
+    networks:
+      net_custom_41
+  web_service_102:
+    image: nginx:latest
+    networks:
+      net_custom_42
+  web_service_103:
+    image: nginx:latest
+    networks:
+      net_custom_43
+  web_service_104:
+    image: nginx:latest
+    networks:
+      net_custom_44
+  web_service_105:
+    image: nginx:latest
+    networks:
+      net_custom_45
+  web_service_106:
+    image: nginx:latest
+    networks:
+      net_custom_46
+  web_service_107:
+    image: nginx:latest
+    networks:
+      net_custom_47
+  web_service_108:
+    image: nginx:latest
+    networks:
+      net_custom_48
+  web_service_109:
+    image: nginx:latest
+    networks:
+      net_custom_49
+  web_service_110:
+    image: nginx:latest
+    networks:
+      net_custom_50
+  web_service_111:
+    image: nginx:latest
+    networks:
+      net_custom_51
+  web_service_112:
+    image: nginx:latest
+    networks:
+      net_custom_52
+  web_service_113:
+    image: nginx:latest
+    networks:
+      net_custom_53
+  web_service_114:
+    image: nginx:latest
+    networks:
+      net_custom_54
+  web_service_115:
+    image: nginx:latest
+    networks:
+      net_custom_55
+  web_service_116:
+    image: nginx:latest
+    networks:
+      net_custom_56
+  web_service_117:
+    image: nginx:latest
+    networks:
+      net_custom_57
+  web_service_118:
+    image: nginx:latest
+    networks:
+      net_custom_58
+  web_service_119:
+    image: nginx:latest
+    networks:
+      net_custom_59
