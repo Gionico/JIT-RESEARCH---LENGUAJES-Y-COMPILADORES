@@ -1,4 +1,4 @@
-# 🚀 Actividad 5: Asistente de Programación Híbrido (UnegScript)
+# Actividad 5: Asistente de Programación Híbrido (UnegScript)
 
 **Asignatura:** Lenguajes y Compiladores  
 **Tema:** Tema 5 (Análisis Sintáctico)  
@@ -7,13 +7,13 @@
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto implementa un **Asistente de Programación Híbrido** para un subconjunto del lenguaje Python denominado **UnegScript**. A diferencia de los compiladores deterministas tradicionales que colapsan ante errores de sintaxis o palabras clave mal escritas, este sistema integra una capa léxica con **tolerancia a fallas** combinada con un **Parser Recursivo Descendente** para la generación del Árbol de Sintaxis Abstracta (AST).
 
 ---
 
-## 🛠️ Arquitectura y Componentes
+## Arquitectura y Componentes
 
 El proyecto se divide en tres módulos principales escritos en **Python 3** utilizando la librería estándar (`re`, `difflib`) sin dependencias externas complejas:
 
@@ -25,7 +25,7 @@ El proyecto se divide en tres módulos principales escritos en **Python 3** util
 
 ---
 
-## ⚙️ Flujo de Trabajo
+## Flujo de Trabajo
 
 1. **Fase Léxica (Lexer Híbrido):**
    * Tokeniza literales, operadores, delimitadores e identificadores mediante expresiones regulares.
@@ -42,7 +42,7 @@ El proyecto se divide en tres módulos principales escritos en **Python 3** util
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 No se requieren instalaciones adicionales. Ejecuta el archivo principal desde la terminal de tu entorno Python 3:
 
