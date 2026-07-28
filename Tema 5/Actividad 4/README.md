@@ -1,14 +1,5 @@
 # Analizador Léxico y Sintáctico para Interfaces de Red en Docker Compose (ANTLR v4)
 
-**Universidad Nacional Experimental de Guayana (UNEG)**  
-**Coordinación de Ingeniería en Informática**  
-**Asignatura:** Lenguaje y Compiladores (2026-I)  
-**Profesor:** Ing. Félix Márquez  
-
----
-
-## 📋 Descripción del Proyecto
-
 Este proyecto corresponde a la **Actividad 4** de la unidad de Análisis Sintáctico. El objetivo principal es diseñar e implementar un analizador léxico (*lexer*) y un analizador sintáctico (*parser*) para validar y procesar la estructura de interfaces de red descritas en archivos de configuración `docker-compose.yml`.
 
 Además de la definición formal de la Gramática Libre de Contexto (GLC), el proyecto incluye un **experimento de carga** que mide y compara la latencia y eficiencia del parsing al procesar un dataset incremental de $n$ archivos ($5 < n < 20$) en tres entornos de ejecución distintos: **Python 3, Java (JVM) y C++**.
